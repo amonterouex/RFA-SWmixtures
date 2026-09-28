@@ -11,8 +11,10 @@ The repository contains two folders:
 ### :ferris_wheel: Mathematica/
 
 The source code is provided as a Mathematica notebook and is intended as a transparent research implementation rather than a standalone software package.
+
 **Dependencies**:  Wolfram Mathematica (tested with version 14.0).
-**Execution**: The notebook includes instructions on how to use the code, with dedicated cells for setting and modifying the required parameters.
+
+**Execution**: The notebook includes instructions on how to use the code, with dedicated cells for setting and modifying the required parameters.  
 
 ### :classical_building: MCsimulations/
 
