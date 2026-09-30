@@ -1,0 +1,21 @@
+# Binary example.  The same program and equations are used; only input.dat changes.
+n_species = 2
+mole_fractions = 0.8 0.2
+diameters = 1.0 1.5
+
+epsilon =
+-1.0 -0.8
+-0.8 -0.6
+end
+
+delta = 0.1
+rho = 0.08
+beta = 1.0
+
+rmax = 6.0
+dr = 0.1
+qmin = 0.01
+qmax = 30.0
+dq = 0.1
+inversion = euler
+pairs = all

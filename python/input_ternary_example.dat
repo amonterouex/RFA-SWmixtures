@@ -1,0 +1,44 @@
+# -----------------------------------------------------------------------------
+# Case study: ternary square-well mixture
+# -----------------------------------------------------------------------------
+# n_species is optional; the program can infer it from mole_fractions.
+n_species = 3
+
+# mole fractions
+mole_fractions = 0.7 0.2 0.1
+
+# hard-core diameters sigma_i
+diameters = 1.0 1.5 2.0
+
+# energy barriers epsilon_ij (negative values give a square well)
+epsilon =
+-1.0 -0.9 -0.8
+-0.9 -0.7 -0.6
+-0.8 -0.6 -0.5
+end
+
+# common shell width Delta
+delta = 0.1
+
+# number density
+rho = 0.2
+
+# inverse temperature
+beta = 1.0
+
+# -----------------------------------------------------------------------------
+# Output grids
+# -----------------------------------------------------------------------------
+rmax = 9.0
+dr = 0.01
+qmin = 0.01
+qmax = 50.0
+dq = 0.1
+
+# euler reproduces the fast notebook routine.
+# euler_plus uses the slower, more accurate EulerILTplus parameters.
+inversion = euler
+
+# all -> every unique pair i <= j.
+# You can also use, for example: pairs = 1-1 1-2 2-2
+pairs = all
